@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF2BF393-C346-4308-A781-52453FEE0F8D}</ProjectGuid>
+    <ProjectGuid>{99F31EDA-9208-4C96-9AF1-96FE15D1CD7D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpEgitimKampi301.EntityLayer</RootNamespace>
-    <AssemblyName>CSharpEgitimKampi301.EntityLayer</AssemblyName>
+    <RootNamespace>CSharpEgitimKampi301.DataAccessLayer</RootNamespace>
+    <AssemblyName>CSharpEgitimKampi301.DataAccessLayer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,12 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrete\Category.cs" />
-    <Compile Include="Concrete\Customer.cs" />
-    <Compile Include="Concrete\Order.cs" />
-    <Compile Include="Concrete\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

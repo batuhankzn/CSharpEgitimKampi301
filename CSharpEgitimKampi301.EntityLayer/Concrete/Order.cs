@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.EntityLayer.Concrete
 {
-    public class Category
+    public class Order
     {
-        public int CategoryId { get; set; }
-        public string CategoryName { get; set; }
-        public bool CategoryStatus { get; set; }
+        public int OrderId { get; set; }
 
     }
 }
