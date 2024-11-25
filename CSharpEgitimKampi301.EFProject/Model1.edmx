@@ -35,7 +35,7 @@
             <PropertyRef Name="LocationId" />
           </Key>
           <Property Name="LocationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Citry" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
           <Property Name="Country" Type="nvarchar" MaxLength="50" />
           <Property Name="Capacity" Type="tinyint" />
           <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
@@ -102,13 +102,13 @@
             <PropertyRef Name="LocationId" />
           </Key>
           <Property Name="LocationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Citry" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Capacity" Type="Byte" />
           <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
           <Property Name="DayNight" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GuideId" Type="Int32" />
           <NavigationProperty Name="Guide" Relationship="Self.FK_Location_Guide" FromRole="Location" ToRole="Guide" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -179,8 +179,8 @@
           <EntitySetMapping Name="Location">
             <EntityTypeMapping TypeName="EgitimKampiEfTravelDbModel.Location">
               <MappingFragment StoreEntitySet="Location">
+                <ScalarProperty Name="City" ColumnName="City" />
                 <ScalarProperty Name="LocationId" ColumnName="LocationId" />
-                <ScalarProperty Name="Citry" ColumnName="Citry" />
                 <ScalarProperty Name="Country" ColumnName="Country" />
                 <ScalarProperty Name="Capacity" ColumnName="Capacity" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
